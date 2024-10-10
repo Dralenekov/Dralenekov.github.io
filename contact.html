@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Мед за дома</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a class="logo" href="index.html"><img src="img/Мед_за_дома__2_-removebg-preview.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="products.html">Продукти</a></li>
+                    <li><a href="#">За нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Свържете се с нас</h1>
+        </div>
+    </section>
+
+    <!-- Основна секция за контакти -->
+    <section class="contact-section">
+        <h1>Имате въпроси? Свържете се с нас!</h1>
+        <p>Попълнете формуляра или се свържете директно чрез предоставените контакти.</p>
+
+        <div class="contact-container">
+            <!-- Лява колона с контактна информация -->
+            <div class="contact-info">
+                <h2>Нашите контакти</h2>
+                <ul>
+                    <li><strong>Телефон:</strong> +359 895 176 500</li>
+                    <li><strong>Email:</strong> medzadoma@gmail.com</li>
+                    <li><strong>Адрес:</strong> Скоро</li>
+                </ul>
+            </div>
+            
+            <!-- Дясна колона с формуляр за контакт -->
+            <div class="contact-form">
+                <h2>Свържете се с нас</h2>
+                <form action="#" method="post">
+                    <label for="name">Име:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Имейл:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Вашето съобщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="contact-btn">Изпрати</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="fon3">
+        <section class="footer">
+            <h4>Кои сме ние?</h4>
+            <img src="img/CEO_MZD_croped2.jpg" alt="Създателя на МЕД ЗА ДОМА">
+            <p>Петър Раленеков - Създател на "Мед за дома"</p>
+            <p>Ние сме семейство наследствени пчелари, като това е наше хоби и продължение на семейна традиция.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p>Copyright Dimitar Ralenekov &copy;</p>
+        </section>
+    </div>
+
+    <!-- JavaScript за навигацията -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

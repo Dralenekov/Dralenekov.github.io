@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукти - Мед за дома</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a class="logo" href="index.html"><img src="img/Мед_за_дома__2_-removebg-preview.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="products.html">Продукти</a></li>
+                    <li><a href="#">За нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Нашите продукти</h1>
+        </div>
+    </section>
+
+    <!-- Основна секция с продукти -->
+    <section class="products-section">
+        <h1>Разгледайте нашите предложения</h1>
+        <div class="products-row">
+            <!-- Продукт 1 -->
+            <div class="product">
+                <img src="img/lipa.jpg" alt="Липов мед">
+                <h3>Липов мед</h3>
+                <p>Бутиков липов мед от Средна гора. Ценен заради своите уникални качества и вкус.</p>
+                <a href="#" class="buy-btn">Купи сега</a>
+            </div>
+            <!-- Продукт 2 -->
+            <div class="product">
+                <img src="img/mana.jpg" alt="Лавандулов мед">
+                <h3>Лавандулов мед</h3>
+                <p>Чист и натурален лавандулов мед с нежен аромат и богат на полезни вещества.</p>
+                <a href="#" class="buy-btn">Купи сега</a>
+            </div>
+            <!-- Продукт 3 -->
+            <div class="product">
+                <img src="img/lipa_mirror.jpg" alt="Букет мед">
+                <h3>Букет мед</h3>
+                <p>Мед букет с разнообразие от цветя, събран от пчелите в чист планински район.</p>
+                <a href="#" class="buy-btn">Купи сега</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="fon3">
+        <section class="footer">
+            <h4>Кои сме ние?</h4>
+            <img src="img/CEO_MZD_croped2.jpg" alt="Създателя на МЕД ЗА ДОМА">
+            <p>Петър Раленеков - Създател на "Мед за дома"</p>
+            <p>Ние сме семейство наследствени пчелари, като това е наше хоби и продължение на семейна традиция.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p>Copyright Dimitar Ralenekov &copy;</p>
+        </section>
+    </div>
+
+    <!-- JavaScript за навигацията -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
